@@ -1,4 +1,17 @@
 # servers-check
+This project lets get information about domains and its servers.
+This is the retrieved information:
+* Title
+* Logo
+* Status - `up or down`
+* SSL grade - `lowest SSL grade among its servers`
+* Previous SSL grade - `SSL grade the domain had past one hour or more`
+* Servers changed - `If servers had changed past one hour or more`
+* Servers - Retrieved from [SSL Labs](https://www.ssllabs.com/projects/ssllabs-apis/index.html)
+    * Address
+    * SSL grade
+    * Country
+    * Owner
 
 ## Requirements
 
@@ -36,6 +49,10 @@ Run project, which will run in `http://localhost:8090`
 ```
 ./back
 ```
+> In `http://localhost:8090/checkDomain/:domain` it can be consulted a domain 
+>
+> In `http://localhost:8090/allDomains`it can be consulted all the past searched domains.
+
 
 ### Front setup
 
@@ -50,3 +67,4 @@ yarn install
 ```
 yarn serve
 ```
+> It will be deployed in `http://localhost:8081`
