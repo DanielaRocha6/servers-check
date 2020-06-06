@@ -21,10 +21,10 @@
           <b-col>
             <b-list-group>
               <b-list-group-item><strong>Status: </strong><span :class="getStatusClass()">{{isDown ? ' Down ' : ' Up '}}</span></b-list-group-item>
-              <b-list-group-item v-if="sslGrade!==''"><strong>Lowest ssl grade: </strong><span :class="getSSLClass()">{{sslGrade}}</span></b-list-group-item>
+              <b-list-group-item v-if="sslGrade!==''"><strong>Lowest ssl grade: </strong><span :class="getSSLClass('actual')">{{sslGrade}}</span></b-list-group-item>
               <b-list-group-item v-if="sslGrade===''"><strong>Lowest ssl grade: </strong><span :class="getSSLClass('actual')">N/A</span></b-list-group-item>
-              <b-list-group-item v-if="previousSslGrade!==''"><strong>Previous lowest ssl grade: </strong><span :class="getSSLClass()">{{previousSslGrade}}</span></b-list-group-item>
-              <b-list-group-item v-if="previousSslGrade===''"><strong>Previous lowest ssl grade: </strong><span :class="getSSLClass('actual')">N/A</span></b-list-group-item>
+              <b-list-group-item v-if="previousSslGrade!==''"><strong>Previous lowest ssl grade: </strong><span :class="getSSLClass('previous')">{{previousSslGrade}}</span></b-list-group-item>
+              <b-list-group-item v-if="previousSslGrade===''"><strong>Previous lowest ssl grade: </strong><span :class="getSSLClass('previous')">N/A</span></b-list-group-item>
             </b-list-group>
           </b-col>
         </b-row>
