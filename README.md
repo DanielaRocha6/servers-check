@@ -1,4 +1,4 @@
-# servers-check
+# Servers check!
 This project lets get information about domains and its servers.
 This is the retrieved information:
 * Title
