@@ -1,12 +1,10 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">General check</router-link> |
-      <router-link to="/domains">All domains</router-link>
-    </div>
+    <Navbar></Navbar>
     <b-container>
       <router-view/>
     </b-container>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -28,4 +26,45 @@
     }
   }
 }
+.container {
+  margin-top: 1rem;
+}
+.aaplus{
+  background-color: #59B45F;
+}
+.aa {
+  background-color: #AAD15D;
+}
+.bb {
+  background-color: #E7CD56;
+}
+.cc {
+  background-color: #FCC642;
+}
+.dd {
+  background-color: #FDBA3F;
+}
+.ee {
+  background-color: #F7965A;
+}
+.ff {
+  background-color: #F1624E;
+}
+.na {
+  background-color: lightgray;
+}
+.ssl-grade {
+  border-radius: 15pt;
+  padding: 8px;
+}
+.note {
+  font-size: 0.75rem;
+}
 </style>
+<script>
+import Navbar from './views/Navbar'
+import Footer from './views/Footer'
+export default {
+  components: { Footer, Navbar }
+}
+</script>

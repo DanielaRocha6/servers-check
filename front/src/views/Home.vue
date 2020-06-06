@@ -10,7 +10,7 @@
           required
           placeholder="Enter the URL" />
       </b-form-group>
-      <b-button type="submit" variant="primary">Submit</b-button>
+      <b-button class="submit-btn" type="submit" >Submit</b-button>
     </b-form>
   </div>
 </template>
@@ -52,3 +52,12 @@ export default {
   }
 }
 </script>
+<style scoped>
+  .submit-btn {
+    background-color: #F9C22E;
+    border-color: #F9C22E
+  }
+  .submit-btn:active {
+    background-color: #F49F0A !important;
+  }
+</style>
